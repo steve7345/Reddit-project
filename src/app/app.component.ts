@@ -14,6 +14,7 @@ export class AppComponent {
     this.articles=[
       new Article('Angular','http://angular.io',5),
       new Article('Google','http://google.ie',5),
+      new Article('TikTok','http://tiktok.com',5),
       new Article('TikTok','http://tiktok.com',5)
     ];
   }
@@ -30,5 +31,5 @@ export class AppComponent {
 sortedArticles() : Article[] {
   return this.articles.sort((a:Article, b:Article)=> b.votes - a.votes);
 }
-  
+
 }
